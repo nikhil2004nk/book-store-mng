@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "hhttps://github.com/nikhil2004nk/book-store-mng",
+  "homepage": "https://github.com/nikhil2004nk/book-store-mng",
   "scripts": {
     "dev": "vite",
     "build": " vite build",
