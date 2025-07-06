@@ -1,7 +1,8 @@
 import BookCard from "../BookCard";
+import type { Book } from "../../data/books";
 
 interface BookGridProps {
-  books: any[]; // Replace 'any' with your Book type
+  books: Book[];
 }
 
 export const BookGrid = ({ books }: BookGridProps) => {

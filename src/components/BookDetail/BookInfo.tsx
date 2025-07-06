@@ -9,13 +9,13 @@ interface BookInfoProps {
 
 export const BookInfo = ({ title, author, price, type }: BookInfoProps) => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-10">
       {/* Title and Author */}
-      <div>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+      <div className="space-y-6">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
           {title}
         </h1>
-        <p className="mt-2 text-lg text-gray-600 flex items-center">
+        <p className="text-lg text-gray-600 flex items-center">
           <FiBookOpen className="mr-2 text-gray-400" />
           by {author}
         </p>

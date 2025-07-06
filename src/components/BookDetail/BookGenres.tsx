@@ -6,16 +6,16 @@ interface BookGenresProps {
 
 export const BookGenres = ({ genres }: BookGenresProps) => {
   return (
-    <div>
-      <h2 className="flex items-center text-lg font-semibold text-gray-900 mb-3">
-        <FiTag className="mr-2 text-gray-400" />
+    <div className="space-y-6">
+      <h2 className="flex items-center text-xl font-semibold text-gray-900">
+        <FiTag className="mr-3 text-gray-400" />
         Genres
       </h2>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-3">
         {genres.map((genre) => (
           <span
             key={genre}
-            className="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full"
+            className="bg-blue-50 text-blue-700 text-sm px-4 py-2 rounded-full font-medium border border-blue-200"
           >
             {genre}
           </span>

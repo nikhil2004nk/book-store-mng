@@ -1,5 +1,4 @@
 import { FiSearch, FiFilter } from "react-icons/fi";
-import { useState } from "react";
 
 interface SearchAndFilterProps {
   searchTerm: string;

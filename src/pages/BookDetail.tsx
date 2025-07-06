@@ -32,28 +32,32 @@ const BookDetail = () => {
     <div className="min-h-screen bg-gray-50">
       <BookDetailHeader />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col lg:flex-row gap-8 xl:gap-12">
-          <BookImage image={book.image} title={book.title} />
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-col lg:flex-row gap-8 xl:gap-16">
+          <div className="lg:w-2/5">
+            <BookImage image={book.image} title={book.title} />
+          </div>
 
           <div className="lg:w-3/5">
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <BookInfo
-                title={book.title}
-                author={book.author}
-                price={book.price}
-                type={book.type}
-              />
+            <div className="bg-white rounded-xl shadow-md p-6 sm:p-8 lg:p-10">
+              <div className="space-y-10">
+                <BookInfo
+                  title={book.title}
+                  author={book.author}
+                  price={book.price}
+                  type=""
+                />
 
-              <BookActions
-                onBuy={() => handleAddToCart("buy")}
-                onRent={() => handleAddToCart("rent")}
-                onQuickBuy={() => handleAddToCartWithoutNavigation("buy")}
-                onQuickRent={() => handleAddToCartWithoutNavigation("rent")}
-              />
+                <BookActions
+                  onBuy={() => handleAddToCart("buy")}
+                  onRent={() => handleAddToCart("rent")}
+                  onQuickBuy={() => handleAddToCartWithoutNavigation("buy")}
+                  onQuickRent={() => handleAddToCartWithoutNavigation("rent")}
+                />
 
-              <BookGenres genres={book.genres} />
-              <BookDescription description={book.description} />
+                <BookGenres genres={book.genres} />
+                <BookDescription description={book.description} />
+              </div>
             </div>
           </div>
         </div>
