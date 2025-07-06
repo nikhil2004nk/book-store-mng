@@ -1,7 +1,8 @@
 # 📚 Book Store Management System
 
 A modern, responsive book store management application built with React, TypeScript, and Tailwind CSS. This application allows users to browse, buy, and rent books with a complete e-commerce experience.
-site is live at https://nikhil2004nk.github.io/book-store-mng/
+
+Site is live at https://nikhil2004nk.github.io/book-store-mng/
 
 ## 🌟 Features
 
