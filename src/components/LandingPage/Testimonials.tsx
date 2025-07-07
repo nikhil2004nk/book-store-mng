@@ -12,13 +12,13 @@ export const Testimonials = () => {
       name: "Michael Chen",
       role: "Book Lover",
       content: "Amazing collection and fast delivery. Highly recommended!",
-      rating: 5
+      rating: 4
     },
     {
       name: "Emily Davis",
       role: "Teacher",
       content: "Great for classroom resources. The rental system is brilliant!",
-      rating: 5
+      rating: 3
     }
   ];
 
